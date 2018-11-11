@@ -32,6 +32,7 @@ The default working directory is '/source-data'. To backup the current directory
 ```bash
 docker run -t --rm -v $(pwd):/source-data kramergroup/restic \
               --AWS_ACCESS_KEY_ID='<my_id>' --AWS_SECRET_ACCESS_KEY='<my_key>' \
-              --RESTIC_REPOSITORY='s3://<my_minio_host>:9000/<bucket-name>' \ --RESTIC_PASSWORD='<my_password>' \
+              --RESTIC_REPOSITORY='s3://<my_minio_host>:9000/<bucket-name>' \ 
+              --RESTIC_PASSWORD='<my_password>' \
               backup .
 ```
