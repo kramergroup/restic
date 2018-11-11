@@ -20,7 +20,8 @@ See the [Restic documentation](https://restic.readthedocs.io/en/stable/) for gen
 ```bash
 docker run -t --rm kramergroup/restic \
               --AWS_ACCESS_KEY_ID='<my_id>' --AWS_SECRET_ACCESS_KEY='<my_key>' \
-              --RESTIC_REPOSITORY='s3://<my_minio_host>:9000/<bucket-name>' \ --RESTIC_PASSWORD='<my_password>' \
+              --RESTIC_REPOSITORY='s3://<my_minio_host>:9000/<bucket-name>' \ 
+              --RESTIC_PASSWORD='<my_password>' \
               init
 ```
 
